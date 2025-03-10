@@ -8,15 +8,55 @@
 <body>
 
     <script>
-        const reverseString = function(str) {
+
+        /* const reverseString = function(str) {
             let splitString = str.split("");
             let reverseArray = splitString.reverse("");
             let joinArray = reverseArray.join("");
             return joinArray;
 };
 
-reverseString("example string");
+reverseString("example string"); 
+        */
+
+        /*
+        const removeFromArray = function(arr, value) {
+    let index = arr.indexOf(value);
+    if (index > -1) {
+        arr.splice(index, 1);
+    }
+        return arr;
+};
+
+console.log(removeFromArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
+
+        */
+
+
+        /*
+    const indexArray = function(arr, value) {
+        arr.indexOf(value);
+
+        return arr;
+};
+
+    console.log(indexArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+        */
+
+    const filterArray = function(arr, value) {
+
+        arr.filter(item !== value);
+        return arr;
+    };
+
+    console.log(filterArray([1, 2, 3, 4, 5, 6], 5));
+        
+    
+    
+    
 
     </script>
+
 </body>
+
 </html>
