@@ -41,19 +41,65 @@ console.log(removeFromArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
 };
 
     console.log(indexArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
-        */
+        
 
     const filterArray = function(arr, value) {
 
-        arr.filter(item !== value);
-        return arr;
+        newArr = arr.filter(item => item !== value);
+        return newArr;
     };
 
-    console.log(filterArray([1, 2, 3, 4, 5, 6], 5));
+console.log(filterArray([1, 2, 3, 4, 5], 2));
         
+const array = [1, 2, 3, 4, 5];
+const itemToRemove = 3;
+
+const newArray = array.filter(item => item !== itemToRemove);
+
+console.log(newArray);
+
+
+
+const removeFromArray = function(arr, ...values) {
+
+newArr = arr.filter(item => !values.includes(item));
+return newArr;
+
+};
+
+console.log(removeFromArray([1,2,3,4], 3, 2));
+
+
+
+
+let arr = [1, 2, 3, 4, 5, 6];
+let valuesToRemove = [1, 2, 4];
+arr = arr.filter(item => !valuesToRemove.includes(item));
+console.log(arr); // Output: [3, 5, 6]
+
+*/
+
+function sumAll(start, end) {
+
+    let arr = [];
+    for (let i = start; i <= end; i++) {
+        arr.push(i);
+    }
     
+    return arr;
+
+    let sum = 0;
+    for (let k = 0; k < arr.length; k++) {
+    sum += arr[k];
+}
+
+}
+
+console.log(sumAll(2, 10));
+
+
     
-    
+
 
     </script>
 
