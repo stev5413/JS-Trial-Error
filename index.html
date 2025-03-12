@@ -77,8 +77,8 @@ let valuesToRemove = [1, 2, 4];
 arr = arr.filter(item => !valuesToRemove.includes(item));
 console.log(arr); // Output: [3, 5, 6]
 
-*/
 
+//completed 3-11-2025
 function sumAll(start, end) {
 
     let arr = [];
@@ -99,8 +99,39 @@ console.log(sumAll(2, 10));
 
 
     
+//Leap Year function 3-12-25, completed same morning
+const leapYears = function(year) {
 
+if (year % 400 === 0) {
 
+    return 'true';
+
+}
+
+else if (year % 4 === 0 && year % 100 !== 0) {
+
+    return 'true';
+}
+
+else {
+    return 'false';
+}
+
+};
+
+console.log(leapYears(1996));
+
+*/
+
+const convertToCelsius = function(tempF) {
+
+let resultC = (tempF - 32) * (5/9);
+
+return resultC;
+
+};
+
+console.log(convertToCelsius(32));
     </script>
 
 </body>
